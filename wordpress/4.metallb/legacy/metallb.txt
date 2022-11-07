@@ -1,0 +1,6 @@
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/namespace.yaml - 이것만 사용 가능
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.12.1/manifests/metallb.yaml
+
+configmap 설정 후
+
+kubectl expose deployment wordpress --type=LoadBalancer --port=80 입력 하거나 yaml 파일로 svc 구동

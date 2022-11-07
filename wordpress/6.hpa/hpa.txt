@@ -1,0 +1,7 @@
+kubectl autoscale deployment wordpress --min=3 --max=5 --cpu-percent=50
+
+
+
+
+--kubelet-insecure-tls
+--kubelet-preferred-address-types=InternalIP, ExternalIP, Hostname
